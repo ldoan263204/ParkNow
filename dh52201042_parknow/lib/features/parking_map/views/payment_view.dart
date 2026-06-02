@@ -38,7 +38,6 @@ class _PaymentViewState extends State<PaymentView> {
     await Future.delayed(const Duration(milliseconds: 1800));
 
     try {
-      // Gắn phương thức thanh toán đã chọn vào booking
       final bookingWithPayment = BookingModel(
         userId: widget.booking.userId,
         parkingLotId: widget.booking.parkingLotId,
@@ -46,6 +45,7 @@ class _PaymentViewState extends State<PaymentView> {
         vehicleType: widget.booking.vehicleType,
         startTime: widget.booking.startTime,
         endTime: widget.booking.endTime,
+        slotNumber: widget.booking.slotNumber,
         paymentMethod: _selectedMethod, // momo / card / cash
       );
 
