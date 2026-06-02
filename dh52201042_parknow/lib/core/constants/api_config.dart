@@ -4,7 +4,7 @@ class ApiConfig {
 
   // Địa chỉ base URL của Backend Spring Boot
   // 10.0.2.2 = localhost khi chạy trên Android Emulator
-  static const String baseUrl = 'http://192.168.1.5:8080/api';
+  static const String baseUrl = 'https://parknow-asdi.onrender.com/api';
 
   // Các endpoint API
   static const String users = '$baseUrl/users';
